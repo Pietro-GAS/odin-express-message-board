@@ -2,6 +2,7 @@ import express from "express";
 import * as path from "path";
 import { fileURLToPath } from 'url';
 import { dirname } from "node:path";
+import { indexRouter } from "./routes/indexRouter.js";
 
 const app = express();
 
@@ -19,7 +20,7 @@ app.use(express.static(assetsPath));
 
 
 
-app.get("/", (req, res) => { res.send("Hello world!")}); // placeholder
+app.use("/", indexRouter);
 
 
 
