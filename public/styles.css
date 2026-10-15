@@ -8,15 +8,47 @@
 
 body {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
 }
 
 ul {
     list-style: none;
 }
 
-.message-list {
+form {
+    border: solid 1px black;
+    width: 300px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
+    gap: 2px;
+}
+
+label, 
+input {
+    display: block;
+    width: 100%;
+}
+
+button {
+    width: 100px;
+}
+
+.message-list {
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     gap: 20px;
 }
 

@@ -11,19 +11,20 @@
     </header>
     <main>
         <form method="POST" action="/new">
-            <p>
+            <div>
                 <label for="msgName">Your name:</label>
                 <input type="text" id="msgName" name="msgName" />
-            </p>
-            <p>
+            </div>
+            <div>
                 <label for="msgText">Text:</label>
-                <input type="text" id="msgText" name="msgText" />
-            </p>
-            <p>
+                 <textarea id="msgText" name="msgText" rows="4" cols="37"></textarea>
+            </div>
+            <div>
                 <button>Submit</button>
                 <button>Cancel</button>
-            </p>
+            </div>
         </form>
+        <a href="/">Home</a>
     </main>
 </body>
 </html>
