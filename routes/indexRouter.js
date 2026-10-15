@@ -14,5 +14,7 @@ const messages = [ // stock messages for the app
 ];
 
 export const indexRouter = Router();
-indexRouter.get("", (req, res) => { res.send("Hello world!"); }); // placeholder
-indexRouter.get("/new", (req, res) => { res.send("New message form"); }); // placeholder
+//indexRouter.get("", (req, res) => { res.send("Hello world!"); }); // placeholder
+indexRouter.get("", (req, res) => { res.render("index", { messages: messages }); });
+//indexRouter.get("/new", (req, res) => { res.send("New message form"); }); // placeholder
+indexRouter.get("/new", (req, res) => { res.render("form"); }); // placeholder

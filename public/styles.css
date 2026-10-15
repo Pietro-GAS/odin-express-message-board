@@ -1,0 +1,27 @@
+*, 
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.message-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.message {
+    max-width: 25vw;
+    border: 1px solid darkblue;
+    padding: 5px;
+}

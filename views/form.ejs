@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css" />
+    <title>New Message</title>
+</head>
+<body>
+    <header>
+        <h1>New Message</h1>
+    </header>
+    <main>
+        <form method="POST" action="/new">
+            <p>
+                <label for="msg-name">Your name:</label>
+                <input type="text" id="msg-name" name="msg-name" />
+            </p>
+            <p>
+                <label for="msg-text">Text:</label>
+                <input type="text" id="msg-text" name="msg-text" />
+            </p>
+            <p>
+                <button>Submit</button>
+                <button>Cancel</button>
+            </p>
+        </form>
+    </main>
+</body>
+</html>
