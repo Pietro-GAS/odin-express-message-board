@@ -17,6 +17,8 @@ app.set("view engine", "ejs");
 
 // middleware to enable the use of static files
 app.use(express.static(assetsPath));
+// middleware to parse form data into req.body
+app.use(express.urlencoded({ extended: true }));
 
 
 
